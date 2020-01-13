@@ -64,9 +64,9 @@ else:
 
 if a.skip != '':
 	try:
-		df = df[~(df['Class'].isin(a.skip))]
+		df = df[~(df['Class'].isin(skip))]
 	except:
-		df = df[~(df['Y'].isin(a.skip))]
+		df = df[~(df['Y'].isin(skip))]
 
 # Check for Nas
 if df.isnull().values.any() == True:
